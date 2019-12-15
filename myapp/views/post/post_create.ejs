@@ -1,0 +1,19 @@
+<% include ../top.html%>
+  <div id="fome_create" style="margin-left: 2%;">
+    <form action="/post/create_process" method="post">
+      <label for="title">제목:</label>
+      <div id="title">
+      <input type="text" name="title" id="title" placeholder="제목을 입력해주세요." style="width: 70%;">
+      </div>
+      <label for="description">내용:</label>
+      <div id="description">
+      <textarea type="text" name="description" rows="5" id="description" placeholder="내용을 입력해주세요." style="width: 70%;"></textarea></<textarea>
+      </div>
+      <div>
+      <button type="submit" class="btn btn-primary">글 작성</button>
+      </div>
+    </form>
+  </div>
+<% include ../footer.html%>
+
+

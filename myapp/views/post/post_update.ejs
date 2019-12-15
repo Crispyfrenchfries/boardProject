@@ -1,0 +1,16 @@
+<% include ../top.html%>
+  <div id="fome_create" style="margin-left: 2%;">
+    <form action="/post/update_process" method="post">
+      <% for(var i=0; i<post.length; i++) {%>
+      <label for="title">제목:</label>
+      <p><input type="text" name="title" value="<%= post[i].title%>"style="width: 70%;"></p>
+      <p><input type="hidden" name="index" value="<%=post[i].index_post%>"></p>
+      <label for="description">내용:</label>
+      <div id="description">
+        <textarea type="text" name="description"rows="5" id="description" style="width: 70%;"><%= post[i].description%></textarea>
+      </div>
+      <% } %>
+      <p><input type="submit"></p>
+    </form>
+
+<% include ../footer.html%>
